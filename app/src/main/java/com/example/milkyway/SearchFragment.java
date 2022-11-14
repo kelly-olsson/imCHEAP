@@ -161,7 +161,7 @@ public class SearchFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "API_KEY_REMOVED");
+                    headers.put("X-RapidAPI-Key", "null");
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
@@ -237,7 +237,7 @@ public class SearchFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "API_KEY_REMOVED");
+                    headers.put("X-RapidAPI-Key", "null");
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
