@@ -1,5 +1,6 @@
 package com.example.milkyway;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -34,6 +35,14 @@ public class CitySummary extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city_summary);
+
+        Bundle bundle = this.getIntent().getExtras().getBundle("bundle") ;
+        String countryName = bundle.getString("countryName");
+        String cityName = bundle.getString("cityName");
+        StringBuilder sb = new StringBuilder(countryName + cityName);
+
+        Toast.makeText(CitySummary.this, sb, Toast.LENGTH_SHORT).show();
+
 
         for (int i = 1; i <= 10; i++) {
 
@@ -95,7 +104,7 @@ public class CitySummary extends AppCompatActivity {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "null");
+                    headers.put("X-RapidAPI-Key", "X-RapidAPI-Key': 'API_KEY_REMOVED");
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
