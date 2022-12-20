@@ -243,7 +243,7 @@ public class SearchFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "API_KEY_REMOVED");
+                    headers.put("X-RapidAPI-Key", BuildConfig.KEY_CITY_PRICE);
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
@@ -322,7 +322,7 @@ public class SearchFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "API_KEY_REMOVED");
+                    headers.put("X-RapidAPI-Key", BuildConfig.KEY_CITY_PRICE);
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
