@@ -125,7 +125,7 @@ public class CitySummaryFragment extends Fragment implements AdapterView.OnItemS
             cityNameView.setText(cityNameSb);
             String lowerCaseCityName = cityName.toLowerCase(Locale.ROOT);
             String url = "https://api.openweathermap.org/data/2.5/forecast";
-            String appid = "API_KEY_REMOVED";
+            String appid = BuildConfig.KEY_WEATHER;
             String tempUrl = url + "?q=" + lowerCaseCityName + "&appid=" + appid;
             AsyncTaskRunnerWeather runnerWeather = new AsyncTaskRunnerWeather();
             runnerWeather.execute(tempUrl);
@@ -438,7 +438,7 @@ public class CitySummaryFragment extends Fragment implements AdapterView.OnItemS
                 @Override
                 public Map<String, String> getHeaders() {
                     HashMap<String, String> headers = new HashMap<>();
-                    headers.put("X-RapidAPI-Key", "API_KEY_REMOVED");
+                    headers.put("X-RapidAPI-Key", BuildConfig.KEY_CITY_PRICE);
                     headers.put("X-RapidAPI-Host", "cost-of-living-and-prices.p.rapidapi.com");
                     return headers;
                 }
