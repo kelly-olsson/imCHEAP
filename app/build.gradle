@@ -16,8 +16,8 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-        buildConfigField "String", "KEY_CITY_PRICE", localProperties['citiesPricesApiKey']
-        buildConfigField "String", "KEY_WEATHER", localProperties['weatherApiKey']
+        buildConfigField "String", "KEY_CITY_PRICE", '"' + localProperties['citiesPricesApiKey'] + '"'
+        buildConfigField "String", "KEY_WEATHER", '"' + localProperties['weatherApiKey'] + '"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
