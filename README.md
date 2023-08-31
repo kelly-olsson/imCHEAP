@@ -26,6 +26,22 @@ https://countryflagsapi.com/png/
 
 https://openweathermap.org/api 
 
+# Configuration and API Keys
+
+To get the app up and running smoothly, set up the `local.properties` file with your API keys. 
+Here's a quick guide on how it should look:
+
+```plaintext
+# local.properties example
+
+citiesPricesApiKey="YOUR_COST_OF_LIVING_API_KEY"
+weatherApiKey="YOUR_WEATHER_API_KEY"
+```
+
+Replace `YOUR_COST_OF_LIVING_API_KEY` and `YOUR_WEATHER_API_KEY` with your actual keys. 
+
+**Note: Keep `local.properties` out of version control to maintain the 
+privacy of your keys.**
 
 # Data Requirements
 ![data req](https://user-images.githubusercontent.com/77209542/206880982-f1c4a99f-c922-47ef-b409-9f7bb6703b66.png)
