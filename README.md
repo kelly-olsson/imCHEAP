@@ -78,4 +78,3 @@ In addition, Firebase also has a limited timeframe for client access. The free s
 
 # Risks
 Because we use free APIs in our project, they are subject to instability and termination of service. This issue can be solved by purchasing a subscription to a more reliable API service.
-API keys are also exposed in the source code. The code base is set as private, but there is still a chance that it can be leaked.
